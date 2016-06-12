@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.postnote</groupId>
 	<artifactId>postnote.app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<properties>
 		<slf4jVersion>1.7.16</slf4jVersion>
 		<spring-framework.version>4.2.6.RELEASE</spring-framework.version>
