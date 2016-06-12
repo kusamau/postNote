@@ -1,0 +1,6 @@
+org.postnote
+org.postnote.controller
+org.postnote.entity
+org.postnote.exception.repository
+org.postnote.repository
+org.postnote.service
