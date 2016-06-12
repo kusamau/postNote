@@ -1,0 +1,31 @@
+<span name="postContainer" ondrop="drop(event)" ondragover="allowDrop(event)" class="slot">
+	<div id="{{post.id}}" draggable="true" ng-keypress="handleUpdateEnter($event, post)" ondragstart="drag(event)" ng-style="{background: post.color}" class="note">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="date pull-left">{{post.creationDate}}</div>
+				<div class="btn-group pull-right" role="group" >
+					<button type="button" class="btn btn-default btn-xs"  ng-click="cancelEdit(post)" ng-show="appIsEditing(post)">
+						<span class="glyphicon glyphicon glyphicon-arrow-left"></span>
+					</button> 				
+					<button type="button" class="btn btn-default btn-xs"  ng-click="updatePost(post)" ng-show="appIsEditing(post)">
+						<span class="glyphicon glyphicon glyphicon-save"></span>
+					</button>
+					<button type="button" class="btn btn-default btn-xs"  ng-click="editPost(post)" ng-hide="appIsEditing(post)">
+						<span class="glyphicon glyphicon glyphicon-edit"></span>
+					</button>
+					<button type="button" class="btn btn-default btn-xs"  ng-click="deletePost(post)" ng-hide="appIsEditing(post)">
+						<span class="glyphicon glyphicon glyphicon-trash"></span>
+					</button> 				
+				</div>
+			</div>
+			<div ng-hide="appIsEditing(post)">
+				<div class="row text" ng-dblclick="editPost(post)">
+					{{post.note}}
+				</div>
+			</div>
+			<div ng-show="appIsEditing(post)">
+				<input type="text" class="small-12.columns" ng-model="post.note">
+			</div>
+		</div>
+	</div>
+</span>

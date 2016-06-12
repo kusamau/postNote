@@ -1,0 +1,24 @@
+<span id="new_post_container" name="postContainer" class="slot">
+	<div id="new_post" ng-keypress="handleInsertEnter($event)" draggable="true" ondragstart="drag(event)" ng-style="{background: new_post.color}" class="note">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="btn-group pull-right" role="group" >
+					<button type="button" class="btn btn-default btn-xs"  ng-click="dropPost()" ng-show="creatingPost">
+						<span class="glyphicon glyphicon glyphicon-arrow-left"></span>
+					</button>
+					<button type="button" class="btn btn-default btn-xs"  ng-click="insertPost()" ng-show="creatingPost">
+						<span class="glyphicon glyphicon glyphicon-save"></span>
+					</button> 					
+				</div>
+			</div>
+			<div>
+				<div class="row text" ng-hide="creatingPost" ng-dblclick="createPost()">
+					{{new_post.note}}
+				</div>
+			</div>
+			<div ng-show="creatingPost">
+				<input type="text" class="small-12.columns" ng-model="new_post.note">
+			</div>
+		</div>
+	</div>
+</span>

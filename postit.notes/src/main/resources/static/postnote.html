@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="postnote">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PostNote</title>
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+	integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	crossorigin="anonymous">
+
+<link
+	href='http://fonts.googleapis.com/css?family=Reenie+Beanie&amp;amp;subset=latin'
+	rel='stylesheet' type='text/css'>
+
+<!-- build:css styles/main.css -->
+<link href="styles/bootstrap-social.css" rel="stylesheet">
+<link href="styles/mystyles.css" rel="stylesheet">
+<!-- endbuild -->
+</head>
+
+<body ng-controller="PostNotesController">
+
+	<div ui-view="header"></div>
+	<div ui-view="messagesRow"></div>
+	<div ui-view="content"></div>
+	<div ui-view="footer"></div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script
+		src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+
+	<!-- Translation libraries -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular-sanitize.js"></script>
+	<script src="scripts/angular-translate.min.js"></script>
+	<script src="scripts/angular-translate-loader-url.min.js"></script>
+
+	<!-- Translation libraries -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controllers.js"></script>
+	<script src="scripts/services.js"></script>
+	<script src="scripts/directives.js"></script>
+</body>
+
+</html>

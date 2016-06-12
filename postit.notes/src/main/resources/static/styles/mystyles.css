@@ -1,0 +1,91 @@
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.row-content {
+	margin: 0px auto;
+	padding: 50px 0px 50px 0px;
+	border-bottom: 1px ridge;
+	min-height: 400px;
+}
+
+.row-header {
+	background-color: #FfFf0f;
+	margin: 0px auto;
+	padding: 10px 0px 10px 0px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 30px;
+	background-color: #FfFf0f;
+}
+
+.row-footer {
+	background-color: #FfFf0f;
+	margin: 0px auto; #
+	padding: 10px 0px 10px 0px;
+}
+
+.postnotes { #
+	height: 100% !important; #
+	overflow: scroll;
+}
+
+.note {
+	overflow: hidden;
+	width: 300px;
+	height: 100px;
+}
+
+.note .text {
+	text-align: center;
+	width: 300px;
+	height: 100px;
+}
+
+.note .date {
+	font: normal 20px courier;
+	float: left;
+	font-size: small;
+}
+
+.note .action {
+	font-size: 20px;
+	float: right;
+	padding: 0px 0px 0px 10px;
+}
+
+.slot {
+	font: normal 40px/48px 'Reenie Beanie';
+	margin-right: 2px;
+	margin-top: 2px;
+	width: 300px;
+	height: 100px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+
+[draggable] {
+	/* not applied by the directive, but useful to indicate a draggable element */
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: move;
+	border: 1px solid black;
+}
